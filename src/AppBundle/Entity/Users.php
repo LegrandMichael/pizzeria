@@ -2,7 +2,7 @@
 
 namespace AppBundle\Entity;
 
-use FOS\UsersBundle\Model\Users as BaseUsers;
+use FOS\UsersBundle\Model\Users as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
