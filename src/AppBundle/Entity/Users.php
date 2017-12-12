@@ -46,12 +46,6 @@ class Users extends BaseUsers
      */
     private $lastName;
 
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="age", type="integer")
-     */
-    private $age;
 
     /**
      * @var string
@@ -91,9 +85,9 @@ class Users extends BaseUsers
     /**
      * @var string
      *
-     * @ORM\Column(name="postalAdress", type="string", length=255)
+     * @ORM\Column(name="postalAddress", type="string", length=255)
      */
-    private $postalAdress;
+    private $postalAddress;
 
 
     /**
@@ -152,30 +146,6 @@ class Users extends BaseUsers
     public function getlastName()
     {
         return $this->lastName;
-    }
-
-    /**
-     * Set age
-     *
-     * @param integer $age
-     *
-     * @return Users
-     */
-    public function setAge($age)
-    {
-        $this->age = $age;
-
-        return $this;
-    }
-
-    /**
-     * Get age
-     *
-     * @return int
-     */
-    public function getAge()
-    {
-        return $this->age;
     }
 
     /**
@@ -299,27 +269,27 @@ class Users extends BaseUsers
     }
 
     /**
-     * Set postalAdress
+     * Set postalAddress
      *
-     * @param string $postalAdress
+     * @param string $postalAddress
      *
      * @return Users
      */
-    public function setpostalAdress($postalAdress)
+    public function setpostalAddress($postalAddress)
     {
-        $this->postalAdress = $postalAdress;
+        $this->postalAddress = $postalAddress;
 
         return $this;
     }
 
     /**
-     * Get postalAdress
+     * Get postalAddress
      *
      * @return string
      */
-    public function getpostalAdress()
+    public function getpostalAddress()
     {
-        return $this->postalAdress;
+        return $this->postalAddress;
     }
 }
 
