@@ -85,9 +85,9 @@ class Users extends BaseUsers
     /**
      * @var string
      *
-     * @ORM\Column(name="postalAddress", type="string", length=255)
+     * @ORM\Column(name="Address", type="string", length=255)
      */
-    private $postalAddress;
+    private $Address;
 
 
     /**
@@ -269,27 +269,27 @@ class Users extends BaseUsers
     }
 
     /**
-     * Set postalAddress
+     * Set Address
      *
-     * @param string $postalAddress
+     * @param string $Address
      *
      * @return Users
      */
-    public function setpostalAddress($postalAddress)
+    public function setAddress($Address)
     {
-        $this->postalAddress = $postalAddress;
+        $this->Address = $Address;
 
         return $this;
     }
 
     /**
-     * Get postalAddress
+     * Get Address
      *
      * @return string
      */
-    public function getpostalAddress()
+    public function getAddress()
     {
-        return $this->postalAddress;
+        return $this->Address;
     }
 }
 
