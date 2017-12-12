@@ -89,6 +89,35 @@ class Users extends BaseUsers
      */
     private $Address;
 
+    /**
+     * @var int
+     * 
+     * @ORM\Column(name="zipCode", type="integer", length=5)
+     */
+    private $zipCode;
+
+    /**
+     * Get zipCode
+     * 
+     * @return int
+     */
+    public function getZipCode()
+    {
+        return $this->zipcode;
+    }
+
+    /**
+     * Set zipCode
+     * 
+     * @return zipCode
+     */
+    public function setZipCode()
+    {
+        $this->zipCode=$zipCode;
+
+        return $this;
+    }
+
 
     /**
      * Get id
