@@ -6,22 +6,17 @@ use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
- * @ORM\Table(name="fos_user")
- */
-
-/**
- * Users
+ * User
  *
- * @ORM\Table(name="Users")
+ * @ORM\Table(name="usr_user")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\UsersRepository")
  */
-class Users extends BaseUser
+class User extends BaseUser
 {
     /**
      * @var int
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="usr_oid", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -35,14 +30,14 @@ class Users extends BaseUser
     /**
      * @var string
      *
-     * @ORM\Column(name="firstName", type="string", length=255)
+     * @ORM\Column(name="usr_first_name", type="string", length=255)
      */
     private $firstName;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="lastName", type="string", length=255)
+     * @ORM\Column(name="usr_last_name", type="string", length=255)
      */
     private $lastName;
 
@@ -50,49 +45,49 @@ class Users extends BaseUser
     /**
      * @var string
      *
-     * @ORM\Column(name="mail", type="string", length=255, unique=true)
+     * @ORM\Column(name="usr_mail", type="string", length=255, unique=true)
      */
     private $mail;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="nickname", type="string", length=255, unique=true)
+     * @ORM\Column(name="usr_nickname", type="string", length=255, unique=true)
      */
     private $nickname;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="gender", type="string", length=5)
+     * @ORM\Column(name="usr_gender", type="string", length=5)
      */
     private $gender;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="birthDate", type="string", length=10)
+     * @ORM\Column(name="usr_birth_date", type="string", length=10)
      */
     private $birthDate;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="phoneNumber", type="string", length=9)
+     * @ORM\Column(name="usr_phone_number", type="string", length=9)
      */
     private $phoneNumber;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="Address", type="string", length=255)
+     * @ORM\Column(name="usr_address", type="string", length=255)
      */
     private $Address;
 
     /**
      * @var int
      * 
-     * @ORM\Column(name="zipCode", type="integer", length=5)
+     * @ORM\Column(name="usr_zip_code", type="integer", length=5)
      */
     private $zipCode;
 
