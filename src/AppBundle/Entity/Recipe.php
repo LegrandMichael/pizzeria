@@ -5,17 +5,17 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Receipts
+ * Recipe
  *
- * @ORM\Table(name="receipts")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\ReceiptsRepository")
+ * @ORM\Table(name="rec_recipe")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\RecipeRepository")
  */
-class Receipts
+class Recipe
 {
     /**
      * @var int
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="rec_oid", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -24,7 +24,7 @@ class Receipts
     /**
      * @var string
      *
-     * @ORM\Column(name="title", type="string", length=255, unique=true)
+     * @ORM\Column(name="rec_title", type="string", length=255, unique=true)
      */
     private $title;
 
@@ -44,7 +44,7 @@ class Receipts
      *
      * @param string $title
      *
-     * @return Receipts
+     * @return Recipe
      */
     public function setTitle($title)
     {
