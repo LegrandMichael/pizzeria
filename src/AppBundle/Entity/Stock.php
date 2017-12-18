@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Stock
  *
- * @ORM\Table(name="stock")
+ * @ORM\Table(name="sto_stock")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\StockRepository")
  */
 class Stock
@@ -15,7 +15,7 @@ class Stock
     /**
      * @var int
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="sto__oid", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -24,14 +24,14 @@ class Stock
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255)
+     * @ORM\Column(name="sto_name", type="string", length=255)
      */
     private $name;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="quantity", type="float")
+     * @ORM\Column(name="sto_quantity", type="float")
      */
     private $quantity;
 
