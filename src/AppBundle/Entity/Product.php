@@ -5,17 +5,17 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Products
+ * Product
  *
- * @ORM\Table(name="products")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\ProductsRepository")
+ * @ORM\Table(name="pro_product")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\ProductRepository")
  */
-class Products
+class Product
 {
     /**
      * @var int
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="pro_oid", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -24,14 +24,14 @@ class Products
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255, unique=true)
+     * @ORM\Column(name="pro_name", type="string", length=255, unique=true)
      */
     private $name;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="price", type="float")
+     * @ORM\Column(name="pro_price", type="float")
      */
     private $price;
 
@@ -51,7 +51,7 @@ class Products
      *
      * @param string $name
      *
-     * @return Products
+     * @return Product
      */
     public function setName($name)
     {
@@ -75,7 +75,7 @@ class Products
      *
      * @param float $price
      *
-     * @return Products
+     * @return Product
      */
     public function setPrice($price)
     {
