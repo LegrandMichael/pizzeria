@@ -5,17 +5,17 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Orders
+ * Purchase
  *
- * @ORM\Table(name="orders")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\OrdersRepository")
+ * @ORM\Table(name="pur_purchase")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\PurchaseRepository")
  */
-class Orders
+class Purchase
 {
     /**
      * @var int
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="pur_oid", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
