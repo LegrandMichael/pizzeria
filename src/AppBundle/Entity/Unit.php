@@ -5,17 +5,17 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Units
+ * Unit
  *
- * @ORM\Table(name="units")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\UnitsRepository")
+ * @ORM\Table(name="uni_unit")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\UnitRepository")
  */
-class Units
+class Unit
 {
     /**
      * @var int
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="uni_oid", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -24,7 +24,7 @@ class Units
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255)
+     * @ORM\Column(name="uni_name", type="string", length=255)
      */
     private $name;
 
@@ -44,7 +44,7 @@ class Units
      *
      * @param string $name
      *
-     * @return Units
+     * @return Unit
      */
     public function setName($name)
     {
